@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class StudiKasus109 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-
-        int hargaPerCup=18000, jumlahCup, uangbayar,
-        totalHarga, diskon, totalBayar, kembalian, kurang;
+         int P=9;
+        int hargaPerCup=15000+(P%6)*1000;
+        int jumlahCup, uangbayar,totalHarga, diskon, totalBayar, kembalian, kurang;
 
         System.out.println("Masukkan jumlah cup :");
         jumlahCup=sc.nextInt();
@@ -20,8 +20,8 @@ public class StudiKasus109 {
         System.out.println("Total harga yang diperoleh Rp."+totalHarga);
 
         
-        if (totalHarga>=100000) {
-            diskon=totalHarga*10/100;
+        if (totalHarga>=120000) {
+            diskon=totalHarga*8/100;
             totalBayar=totalHarga-diskon;
             System.out.println("Diskon yang diperoleh :Rp."+diskon);
             System.out.println("Total bayar diperoleh :Rp."+totalBayar);
