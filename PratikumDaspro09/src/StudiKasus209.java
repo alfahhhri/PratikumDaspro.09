@@ -32,6 +32,21 @@ public class StudiKasus209 {
             }
 
             
+        }  else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+            System.out.println("Masukkan Status pendanaan (1/0) : ");
+            statusPendanaan=sc.nextInt();
+            if (statusPendanaan==1) {
+                System.out.println("Selamat anda lolos");                
+            if (jumlahDokumen==4) {
+                System.out.println("Dokumen Lengkap, dana diberikan");
+
+            } else {
+                kurangDokumen=4-jumlahDokumen;
+                System.out.println("Dokumen tidak lengkap (Kurang " +kurangDokumen + " dokumen). Dana tidak diberikan");
+            }
+            } else {
+                System.out.println("Maaf anda tidak lolos");
+            }
         }
 
     }
