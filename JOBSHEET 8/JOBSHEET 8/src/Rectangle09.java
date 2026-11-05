@@ -9,13 +9,13 @@ public class Rectangle09 {
         int kolom=sc.nextInt();
 
         
-        // for (int i=1; i <= kolom; i++) {
-        // for (int j=1; j <= baris; j++) {
-        // System.out.print("#");
+        for (int i=1; i <= kolom; i++) {
+        for (int j=1; j <= baris; j++) {
+        System.out.print("#");
 
-        // }
-        // System.out.println();
-        // }
-        // sc.close();
+        }
+        System.out.println();
+        }
+        sc.close();
     }
 }
