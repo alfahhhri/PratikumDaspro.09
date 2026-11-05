@@ -6,28 +6,28 @@ public class Triangle09 {
         int n =sc.nextInt();
 
         
-        int i = 0;
-        while (i <= n) {
-        int j = 0;
-            while (j < i) {
-            System.out.print("*");
-            j++;
-        }
-        System.out.println();
-        i++;
-        }
-        sc.close();
-        
-        // int i =n;
-        // while (i >=1) {
-        //     int j =1;
-        //     while (j<=i) {
-        //         System.out.print("*");
-        //         j++;
-        //     }
-        //     System.out.println();
-        // i--;
+        // int i = 0;
+        // while (i <= n) {
+        // int j = 0;
+        //     while (j < i) {
+        //     System.out.print("*");
+        //     j++;
+        // }
+        // System.out.println();
+        // i++;
         // }
         // sc.close();
+        
+        int i =n;
+        while (i >=1) {
+            int j =1;
+            while (j<=i) {
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+        i--;
+        }
+        sc.close();
     }
 }
