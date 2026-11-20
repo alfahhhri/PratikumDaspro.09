@@ -3,7 +3,9 @@ public class SearchNilai09 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int [] nilai= {78, 65, 90, 55, 88, 72};
-        int key=59;
+        int key=0;
+        System.out.print("Masukkan key : ");
+        key=sc.nextInt();
         boolean ditemukan= false;
 
         for (int i = 0; i < nilai.length; i++) {
