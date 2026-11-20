@@ -23,9 +23,9 @@ public class ArrayRataNilai09 {
         for (int i = 1; i < nilaiMhs.length; i++) {
             if (nilaiMhs[i] > tertinggi) tertinggi=nilaiMhs[i];
             if (nilaiMhs[i] < terendah) terendah=nilaiMhs[i];
-            // // if (nilaiMhs[i]>70) {
-            // //     jmlLulus++;
-            // }
+            if (nilaiMhs[i]>70) {
+                jmlLulus++;
+            }
             if (rata2 >=85) {
              status="SANGAT BAIK";
             } else if (rata2 >=70) {
@@ -37,7 +37,7 @@ public class ArrayRataNilai09 {
         }
         System.out.println("Nilai tertinggi : "+tertinggi);
         System.out.println("Nilai terendah : "+terendah);
-        // System.out.println("Jumlah lulus : "+jmlLulus);
+        System.out.println("Jumlah lulus : "+jmlLulus);
         System.out.println("Predikat kelas : "+status);
     }
     
