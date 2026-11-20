@@ -12,11 +12,21 @@ public class ArrayNilai09 {
             nilaiAkhir[i] = input.nextInt();
         }
 
-        int no = 1;
-        for (int nilai : nilaiAkhir) {
-            status = (nilai > 70) ? "LULUS" : "TIDAK LULUS";
-            System.out.println("Mahasiswa ke-" + no + ": " + nilai + " (" + status + ")");
-            no++;
+        int jmlLulus = 0;
+        int jmlTdkLulus = 0;
+
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                status = "LULUS";
+                jmlLulus++;
+            } else {
+                status = "TIDAK LULUS";
+                jmlTdkLulus++;
+            }
+            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
         }
+
+        System.out.println("Jumlah lulus : " + jmlLulus);
+        System.out.println("Jumlah tidak lulus : " + jmlTdkLulus);
     }
 }
